@@ -1,0 +1,129 @@
+2021-11-23 10:55:19.491 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ea6b0aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 10:55:19.687 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 10:55:19.742 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[common.yml] & group[DEFAULT_GROUP]
+2021-11-23 10:55:19.792 [main] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'sample-cloud-service-order', group: 'DEFAULT_GROUP', data: test: 111
+2021-11-23 10:55:19.861 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 10:55:19.913 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order-dev.yml] & group[DEFAULT_GROUP]
+2021-11-23 10:55:19.914 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='sample-cloud-service-order-dev.yml'}, NacosPropertySource {name='sample-cloud-service-order.yml'}, NacosPropertySource {name='sample-cloud-service-order'}, NacosPropertySource {name='common.yml'}]}
+2021-11-23 10:55:19.918 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - The following profiles are active: dev
+2021-11-23 10:55:20.302 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2021-11-23 10:55:20.304 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2021-11-23 10:55:20.424 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-11-23 10:55:20.506 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=90a433db-1a1e-3688-9c7a-344d52e830d3
+2021-11-23 10:55:20.520 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sample.cloud.base.api.service.BaseDataClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 10:55:20.558 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ea6b0aef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 10:55:20.649 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-11-23 10:55:20.671 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-11-23 10:55:20.671 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 742 ms
+2021-11-23 10:55:20.954 [main] INFO  s.cloud.core.ribbon.config.RibbonConfiguration - 随机负载均衡
+2021-11-23 10:55:20.959 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 10:55:20.960 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 10:55:20.961 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 10:55:20.961 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 10:55:21.017 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-23 10:55:21.095 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-11-23 10:55:21.206 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-23 10:55:21.258 [main] INFO  io.undertow - starting server: Undertow - 2.0.28.Final
+2021-11-23 10:55:21.261 [main] INFO  org.xnio - XNIO version 3.3.8.Final
+2021-11-23 10:55:21.265 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+2021-11-23 10:55:21.294 [main] INFO  o.s.b.w.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 3001 (http) with context path '/service-order'
+2021-11-23 10:55:21.434 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP sample-cloud-service-order 192.168.0.21:3001 register finished
+2021-11-23 10:55:21.438 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - Started ServiceOrderApplication in 2.368 seconds (JVM running for 3.008)
+2021-11-23 10:58:01.198 [XNIO-1 task-1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 10:58:01.198 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-23 10:58:01.206 [XNIO-1 task-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-11-23 10:59:46.407 [hystrix-sample-cloud-service-base-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: sample-cloud-service-base instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sample-cloud-service-base,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-11-23 10:59:46.410 [hystrix-sample-cloud-service-base-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-11-23 10:59:46.487 [hystrix-sample-cloud-service-base-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sample-cloud-service-base initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sample-cloud-service-base,current list of Servers=[192.168.0.21:51458],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.0.21:51458;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@1d317420
+2021-11-23 14:58:31.188 [Thread-23] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-11-23 14:58:31.195 [Thread-10] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-11-23 14:58:31.435 [Thread-10] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-11-23 14:58:31.436 [Thread-10] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-23 14:58:31.443 [Thread-10] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-11-23 14:58:31.444 [Thread-10] INFO  io.undertow - stopping server: Undertow - 2.0.28.Final
+2021-11-23 14:58:34.094 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5699a667] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 14:58:34.216 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 14:58:34.229 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[common.yml] & group[DEFAULT_GROUP]
+2021-11-23 14:58:34.237 [main] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'sample-cloud-service-order', group: 'DEFAULT_GROUP', data: test: 111
+2021-11-23 14:58:34.411 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 14:58:34.419 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order-dev.yml] & group[DEFAULT_GROUP]
+2021-11-23 14:58:34.419 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='sample-cloud-service-order-dev.yml'}, NacosPropertySource {name='sample-cloud-service-order.yml'}, NacosPropertySource {name='sample-cloud-service-order'}, NacosPropertySource {name='common.yml'}]}
+2021-11-23 14:58:34.422 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - The following profiles are active: dev
+2021-11-23 14:58:34.637 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2021-11-23 14:58:34.638 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2021-11-23 14:58:34.709 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-11-23 14:58:34.774 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8d776f53-2f49-3ba3-a993-9608829d5e3d
+2021-11-23 14:58:34.784 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sample.cloud.base.api.service.BaseDataClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 14:58:34.812 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5699a667] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 14:58:34.884 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-11-23 14:58:34.896 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-11-23 14:58:34.896 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 463 ms
+2021-11-23 14:58:35.212 [main] INFO  s.cloud.core.ribbon.config.RibbonConfiguration - 随机负载均衡
+2021-11-23 14:58:35.217 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 14:58:35.218 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 14:58:35.219 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 14:58:35.219 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 14:58:35.276 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-23 14:58:35.323 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-11-23 14:58:35.409 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-23 14:58:35.469 [main] INFO  io.undertow - starting server: Undertow - 2.0.28.Final
+2021-11-23 14:58:35.472 [main] INFO  org.xnio - XNIO version 3.3.8.Final
+2021-11-23 14:58:35.475 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+2021-11-23 14:58:35.505 [main] INFO  o.s.b.w.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 3001 (http) with context path '/service-order'
+2021-11-23 14:58:35.556 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP sample-cloud-service-order 192.168.0.21:3001 register finished
+2021-11-23 14:58:35.560 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - Started ServiceOrderApplication in 1.868 seconds (JVM running for 2.237)
+2021-11-23 14:58:36.055 [RMI TCP Connection(2)-127.0.0.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 14:58:36.055 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-23 14:58:36.058 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-11-23 14:59:53.039 [hystrix-sample-cloud-service-base-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: sample-cloud-service-base instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sample-cloud-service-base,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2021-11-23 14:59:53.042 [hystrix-sample-cloud-service-base-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2021-11-23 14:59:53.255 [hystrix-sample-cloud-service-base-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client sample-cloud-service-base initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sample-cloud-service-base,current list of Servers=[192.168.0.21:3000],Load balancer stats=Zone stats: {unknown=[Zone:unknown;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.0.21:3000;	Zone:UNKNOWN;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@548185d3
+2021-11-23 15:06:36.590 [Thread-30] INFO  com.netflix.loadbalancer.PollingServerListUpdater - Shutting down the Executor Pool for PollingServerListUpdater
+2021-11-23 15:06:36.596 [Thread-13] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-11-23 15:06:36.615 [Thread-13] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-11-23 15:06:36.617 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-23 15:06:36.625 [Thread-13] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-11-23 15:06:36.626 [Thread-13] INFO  io.undertow - stopping server: Undertow - 2.0.28.Final
+2021-11-23 15:06:41.101 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53ace934] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 15:06:41.230 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 15:06:41.237 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[common.yml] & group[DEFAULT_GROUP]
+2021-11-23 15:06:41.246 [main] INFO  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Loading nacos data, dataId: 'sample-cloud-service-order', group: 'DEFAULT_GROUP', data: test: 111
+2021-11-23 15:06:41.416 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order.yml] & group[DEFAULT_GROUP]
+2021-11-23 15:06:41.426 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[sample-cloud-service-order-dev.yml] & group[DEFAULT_GROUP]
+2021-11-23 15:06:41.427 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: CompositePropertySource {name='NACOS', propertySources=[NacosPropertySource {name='sample-cloud-service-order-dev.yml'}, NacosPropertySource {name='sample-cloud-service-order.yml'}, NacosPropertySource {name='sample-cloud-service-order'}, NacosPropertySource {name='common.yml'}]}
+2021-11-23 15:06:41.431 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - The following profiles are active: dev
+2021-11-23 15:06:41.657 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2021-11-23 15:06:41.657 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2021-11-23 15:06:41.725 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-11-23 15:06:41.790 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8d776f53-2f49-3ba3-a993-9608829d5e3d
+2021-11-23 15:06:41.800 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sample.cloud.base.api.service.BaseDataClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 15:06:41.829 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$53ace934] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-23 15:06:41.897 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-11-23 15:06:41.907 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2021-11-23 15:06:41.907 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 461 ms
+2021-11-23 15:06:42.192 [main] INFO  s.cloud.core.ribbon.config.RibbonConfiguration - 随机负载均衡
+2021-11-23 15:06:42.197 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 15:06:42.197 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 15:06:42.199 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2021-11-23 15:06:42.199 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-11-23 15:06:42.253 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-23 15:06:42.298 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2021-11-23 15:06:42.382 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-11-23 15:06:42.433 [main] INFO  io.undertow - starting server: Undertow - 2.0.28.Final
+2021-11-23 15:06:42.435 [main] INFO  org.xnio - XNIO version 3.3.8.Final
+2021-11-23 15:06:42.439 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.3.8.Final
+2021-11-23 15:06:42.468 [main] INFO  o.s.b.w.embedded.undertow.UndertowServletWebServer - Undertow started on port(s) 3001 (http) with context path '/service-order'
+2021-11-23 15:06:42.519 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP sample-cloud-service-order 192.168.0.21:3001 register finished
+2021-11-23 15:06:42.522 [main] INFO  sample.cloud.order.web.ServiceOrderApplication - Started ServiceOrderApplication in 1.731 seconds (JVM running for 2.146)
+2021-11-23 15:06:42.887 [RMI TCP Connection(1)-127.0.0.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-23 15:06:42.887 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-11-23 15:06:42.892 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2021-11-23 18:27:24.569 [Thread-12] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2021-11-23 18:27:24.577 [Thread-12] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2021-11-23 18:27:24.578 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-23 18:27:24.584 [Thread-12] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-11-23 18:27:24.585 [Thread-12] INFO  io.undertow - stopping server: Undertow - 2.0.28.Final

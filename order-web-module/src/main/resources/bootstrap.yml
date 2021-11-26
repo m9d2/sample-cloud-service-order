@@ -1,0 +1,75 @@
+server:
+  servlet:
+    context-path: /service-order
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: sample-cloud-service-order
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          management:
+            context-path: ${server.servlet.context-path}/actuator
+      config:
+        shared-dataids: sample-cloud-service-order.yml,common.yml
+        refreshable-dataids: sample-cloud-service-order.yml,common.yml
+
+feign:
+  hystrix:
+    enabled: true
+
+---
+server:
+  port: 3001
+
+spring:
+  profiles: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
+      discovery:
+        server-addr: 127.0.0.1:8848
+        cluster-name: xa
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
+
+---
+server:
+  port: 3001
+
+spring:
+  profiles: test
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
+      discovery:
+        server-addr: 127.0.0.1:8848
+        cluster-name: xa
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
+
+---
+server:
+  port: 3001
+
+spring:
+  profiles: prod
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
+      discovery:
+        server-addr: 127.0.0.1:8848
+        cluster-name: xa
+        namespace: 3895580d-cf4d-4b39-aa0d-a54126048447
