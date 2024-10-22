@@ -5,11 +5,11 @@
     <parent>
         <groupId>sample.cloud</groupId>
         <artifactId>sample-cloud</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>sample-cloud-service-order</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>sample-cloud-service-order</name>
     <packaging>pom</packaging>
 
@@ -18,27 +18,37 @@
     </properties>
 
     <modules>
-        <module>order-api-module</module>
-        <module>order-domain-module</module>
-        <module>order-web-module</module>
+        <module>order-service</module>
+        <module>order-service-api</module>
+        <module>order-service-model</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>sample.cloud</groupId>
-                <artifactId>order-api-module</artifactId>
+                <artifactId>order-service-model</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>sample.cloud</groupId>
-                <artifactId>order-domain-module</artifactId>
+                <artifactId>order-service-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>sample.cloud</groupId>
-                <artifactId>base-api-module</artifactId>
-                <version>${project.version}</version>
+                <artifactId>base-service-api</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>sample.cloud</groupId>
+                <artifactId>base-service-model</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>sample.cloud</groupId>
+                <artifactId>sample-cloud-web</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

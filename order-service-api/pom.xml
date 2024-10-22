@@ -5,19 +5,19 @@
     <parent>
         <groupId>sample.cloud</groupId>
         <artifactId>sample-cloud-service-order</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>order-domain-module</artifactId>
+    <artifactId>order-service-api</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>sample.cloud</groupId>
+            <artifactId>order-service-model</artifactId>
         </dependency>
     </dependencies>
 
